@@ -1,0 +1,25 @@
+CREAR AMBIENTE VIRTUAL 
+    * Crear ambiente virtual python
+        python -m venv nombre-del-ambiente
+    * Activar el ambiente
+        windows
+            source nombre-del-ambiente\Scripts\activate.bat
+        linux
+            source nombre-del-ambiente/bin/activate
+
+
+INSTALAR OPENCV (tener instalado pip)
+    módulos principales.
+        pip install opencv-python
+    módulos principales y extras
+        pip install opencv-contrib-python
+    módulos principales sin funcionalidad GUI
+        pip install opencv-python-headless
+    módulos principales y extras (contrib) sin funcionalidad GUI
+        pip install opencv-contrib-python-headless
+
+
+
+
+
+
