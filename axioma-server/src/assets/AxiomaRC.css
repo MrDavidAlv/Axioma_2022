@@ -1,0 +1,56 @@
+.controlrc {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.camera {
+    /* display: flex; */
+    background-color: blueviolet;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    /* min-width: 49%;
+    max-width: 49%; */
+}
+.Webcam{ 
+    max-width: 100% !important;
+}
+
+.controlLeft {
+    background-color: gray;
+    min-width: 25%;
+    max-width: 25%;
+    /* float: left; */
+}
+.controlRight {
+    background-color: gray;
+    min-width: 25%;
+    max-width: 25%;
+    /* float: right; */
+}
+
+.botonera{
+    min-width: 100%;
+    min-height: 60%; 
+    /* background-color: aqua; */
+    display: grid;
+}
+.joystick {
+    min-width: 100%;
+    min-height: 40%;
+    margin-top: 10%;
+    margin-left: 30%;
+    /* background-color: azure; */
+}
+.boton{
+    border-radius: 150px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    font-size: 20px;
+}
+#tabla1 {
+    margin: 5%;
+}
