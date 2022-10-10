@@ -1,0 +1,76 @@
+body {
+    /* background-image: url("./img/axioma.jpg"); */
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+    min-width: 100%;
+    right: 100%;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    min-width: 100%;
+    background-color: rgb(9, 207, 207);
+    
+}
+
+.camera {
+    margin: 0px;
+    padding: 0px;
+}
+
+.vel {
+    float: left;
+    width: 50%;
+    z-index: 5;
+    position: fixed;
+    color: rgb(0, 255, 85);
+}
+
+
+
+@media all and (orientation:portrait) {
+    /* .robot {
+        width: 100%;
+        text-align: center;
+        width: 100%;
+    }
+    .robot img{
+        
+    } */
+	.right{
+        background-color: brown;
+        display: none;
+    }
+
+    .left{
+        max-width: 100%;
+        float: left;
+        text-align: center;
+    }
+}
+@media all and (orientation:landscape) {
+    .robot {
+        display: none;
+    }
+	.left{
+        max-width: 50%;
+        float: left;
+        text-align: center;
+    }
+    .left img{
+        min-width: 100%;
+    }
+    .right{
+        max-width: 50%;
+        float: left;
+        text-align: center;
+    }
+    .right img{
+        min-width: 100%;
+    }
+    .control {
+        display: none;
+    }
+}

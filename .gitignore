@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/axioma-server/node_modules
+/axioma-server/.pnp
+/axioma-server/.pnp.js
+
+# testing
+/axioma-server/coverage
+
+# production
+/axioma-server/build
+
+# misc
+/axioma-server/.DS_Store
+/axioma-server/.env.local
+/axioma-server/.env.development.local
+/axioma-server/.env.test.local
+/axioma-server/.env.production.local
+
+/axioma-server/npm-debug.log*
+/axioma-server/yarn-debug.log*
+/axioma-server/yarn-error.log*
