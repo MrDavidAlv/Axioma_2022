@@ -10,7 +10,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((socket.gethostname(), 1234))
 s.listen(5)
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(-1)
 
 cam.set(3, 320);
 cam.set(4, 240);
