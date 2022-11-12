@@ -1,13 +1,89 @@
+!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <h1>Robot</h1>
-    <img src="http://192.168.10.163:4747/video" />
-    <!--Enter the IP Address of your Raspberry Pi-->
 
-    <script>
+<head>
+  <title>Movil cam axioma</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <style>
+    h1 {
+      color: aliceblue;
+    }
+
+    .bi {
+      font-size: 4em;
+    }
+
+    body {
+      background-color: #000000;
+    }
+
+    #id_a {
+      width: 100%;
+      height: 600px;
+    }
+
+    #id_b {
+      width: 100%;
+      height: 600px;
+    }
+
+    .bi {
+      color: #6e6e6e;
+      box-shadow: 4px 4px 2px 1px #0000005b;
+      border-radius: 40px;
+    }
+
+    .keys {
+      text-align: center;
+
+    }
+
+    .container_cams {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row container_cams">
+
+      <div class="col p-0">
+        <img id="id_a" src="http://192.168.0.9:9000/video"></img>
+      </div>
+      <div class="col p-0">
+        <img id="id_b" src="http://192.168.0.9:9000/video"></img>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <script>
+
       window.addEventListener(
         "keydown",
         (event) => {
